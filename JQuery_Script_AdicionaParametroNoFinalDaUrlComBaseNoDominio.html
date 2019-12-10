@@ -1,5 +1,9 @@
 <script>
-      var addlink = '?utm_source=organico&utm_medium=blog&utm_campaign=conversao';
-      var links = jQuery('a[href*="https://www.miess.com.br"]');
-      links.attr('href', links.attr('href') + addlink);    
+      var parameter  = "?utm_source=organico&utm_medium=blog&utm_campaign=conversao";
+      var url;
+      var domain = jQuery('a[href*="https://www.miess.com.br"]');
+      domain.each(function() {
+        url = $(this).prop("href");
+        $(this).prop("href", url + parameter);
+      });
 </script>
