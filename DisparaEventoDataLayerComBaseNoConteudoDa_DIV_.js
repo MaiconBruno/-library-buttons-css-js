@@ -1,4 +1,4 @@
-<script>
+
   $( document ).ajaxSuccess(function( event, xhr, settings ) {
 
     console.log( "Triggered ajaxSuccess handler. The Ajax response was: " +
@@ -8,4 +8,3 @@
     }
 
 });
-</script>

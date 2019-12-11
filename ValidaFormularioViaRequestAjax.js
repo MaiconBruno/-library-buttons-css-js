@@ -1,5 +1,4 @@
 
-    <script>
       //esse código verifica o status da requisição ajax
       //e dispara as condições caso retorno seja: 4 (Operação Concluída)
       //Tipos de Retorno da requisção.
@@ -29,5 +28,5 @@
           }
         }
       });
-    </script>
+    
 
