@@ -1,0 +1,63 @@
+<!-- Importações necessarias -->
+<script src="https://kit.fontawesome.com/76116071c9.js" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/fdd1ed2165.js"></script>
+<!-- Importações necessarias -->
+
+<div class="sticker-bar">
+    <a class="ico tel fas fa-phone" href="tel:#"></a>
+    <a class="ico phone fas fa-mobile-alt" href="tel:#"></a>
+    <a class="ico whats fab fa-whatsapp" href="https://wa.me/#"></a>
+</div>
+
+<style>
+    /* Div dos components */
+    .sticker-bar {
+        display: flex;
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        z-index: 99999;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Hover Tel Fixo*/
+    .tel:hover {
+        background-color: rgb(252, 135, 119);
+    }
+    /* Hover Phone Cel */
+    .phone:hover {
+        background-color: rgb(120, 161, 250);
+    }
+    /* Hover Whats */
+    .whats:hover {
+        background-color: rgb(90, 223, 139);
+    }
+
+    /* Config Tel fixo */
+    .tel {
+        background-color: rgb(255, 94, 73);
+        border-radius: 10px 0px 0px 0px;
+    }
+    /* Config Phone cel */
+    .phone {
+        background-color: rgb(59, 119, 250);
+    }
+    /* Config Whatsapp */
+    .whats {
+        background-color: rgb(22, 206, 89);
+        border-radius: 0px 10px 0px 0px;
+    }
+    /* Config icones gerais */
+    .ico {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10%;
+        height: 15px;
+        font-size: 25px;
+        text-decoration: none;
+        padding: 20px;
+        color: white;
+    }
+</style>
