@@ -1,0 +1,40 @@
+
+    <meta charset="UTF-8">
+    <!-- jQuery -->
+    <script src="jquery.js"></script>
+
+    <!-- Header -->
+    <header id="header" class="main-header"><h2>Conteudo Menu</h2></header>
+
+    <!-- O elemento esta presente só para alargar à sessão na vertical para utilizar o scroll -->
+    <div style="min-height: 1200px;"></div>
+
+    <!-- CSS -->
+    <style>
+        * {margin: 0;padding: 0;}
+        .main-header {width: 100%;height: 100px;background-color: rgb(0, 122, 153);position: fixed;top: 0%; display: flex; align-items: center; justify-content: center; font-size:50px; color:rgb(255, 255, 255);border-bottom: solid rgb(0, 122, 153) 2px;}
+        .main-header_scroll {background-color: rgb(255, 255, 255) !important; color:rgb(0, 122, 153);border-bottom: solid rgb(0, 122, 153) 3px;}       
+    </style>
+
+    <!-- JS -->
+    <script>
+        var main_header_var = $('.main-header');
+        if (main_header_var.length > 0) {
+            var _menu_action = main_header_var.offset().top;
+            var Ninzio_Menu_Fixed = function () {
+                "use strict";
+                if ($(document).scrollTop() > _menu_action) {
+                    main_header_var.addClass('main-header_scroll');
+                } else {
+                    main_header_var.removeClass('main-header_scroll');
+                }
+            }
+            if ($(window).width() > 991) {
+                $(window).scroll(function (event) {
+                    Ninzio_Menu_Fixed();
+                });
+                Ninzio_Menu_Fixed();
+            }
+        }
+    </script>
+
